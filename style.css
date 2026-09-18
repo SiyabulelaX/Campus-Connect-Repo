@@ -1,0 +1,349 @@
+/* ================================
+   CAMPUS CONNECT
+   Main Website Stylesheet
+   ================================ */
+
+
+/* ---------- GENERAL ---------- */
+
+•	{
+    Box-sizing: border-box;
+}
+
+Html {
+    Scroll-behavior: smooth;
+}
+
+Body {
+    Margin: 0;
+    Font-family: Arial, Helvetica, sans-serif;
+    Background-color: #f5f7fa;
+    Color: #263238;
+    Line-height: 1.6;
+}
+
+
+/* ---------- HEADER ---------- */
+
+Header {
+    Background-color: #123b5d;
+    Color: white;
+    Text-align: center;
+    Padding: 25px 20px;
+}
+
+Header img {
+    Width: 180px;
+    Max-width: 90%;
+    Height: auto;
+}
+
+Header h1 {
+    Margin: 10px 0 5px;
+    Font-size: 2.2rem;
+}
+
+Header p {
+    Margin: 5px 0 20px;
+    Font-size: 1.05rem;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+Nav {
+    Margin-top: 15px;
+}
+
+Nav a {
+    Display: inline-block;
+    Color: white;
+    Text-decoration: none;
+    Font-weight: bold;
+    Padding: 8px 12px;
+    Margin: 3px;
+    Border-radius: 5px;
+}
+
+Nav a:hover {
+    Background-color: #f4b942;
+    Color: #123b5d;
+}
+
+
+/* ---------- HORIZONTAL LINE ---------- */
+
+Hr {
+    Border: 0;
+    Border-top: 1px solid #d5dce2;
+    Margin: 30px 0;
+}
+
+
+/* ---------- MAIN CONTENT ---------- */
+
+Main {
+    Width: 90%;
+    Max-width: 1100px;
+    Margin: 30px auto;
+}
+
+Section,
+Article {
+    Background-color: white;
+    Padding: 25px;
+    Margin-bottom: 25px;
+    Border-radius: 8px;
+    Box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ---------- HEADINGS ---------- */
+
+H2 {
+    Color: #123b5d;
+    Font-size: 1.8rem;
+    Margin-top: 0;
+}
+
+H3 {
+    Color: #176b87;
+    Font-size: 1.3rem;
+}
+
+P {
+    Margin-bottom: 15px;
+}
+
+
+/* ---------- LINKS ---------- */
+
+A {
+    Color: #176b87;
+}
+
+Main a {
+    Font-weight: bold;
+}
+
+Main a:hover {
+    Color: #d18b00;
+}
+
+
+/* ---------- BUTTON-LIKE LINKS ---------- */
+
+Main a[href] {
+    Text-decoration: none;
+}
+
+
+/* ---------- IMAGES ---------- */
+
+Main img {
+    Max-width: 100%;
+    Height: auto;
+    Display: block;
+    Margin: 15px auto;
+    Border-radius: 8px;
+}
+
+Main section img {
+    Max-width: 500px;
+}
+
+
+/* ---------- LISTS ---------- */
+
+Ul {
+    Padding-left: 25px;
+}
+
+Li {
+    Margin-bottom: 8px;
+}
+
+
+/* ---------- TABLES ---------- */
+
+Table {
+    Width: 100%;
+    Border-collapse: collapse;
+    Margin: 20px 0;
+    Background-color: white;
+}
+
+Th {
+    Background-color: #123b5d;
+    Color: white;
+    Padding: 12px;
+    Text-align: left;
+}
+
+Td {
+    Padding: 12px;
+    Border-bottom: 1px solid #ddd;
+}
+
+Tr:hover {
+    Background-color: #f1f5f8;
+}
+
+
+/* ---------- FORMS ---------- */
+
+Form {
+    Background-color: white;
+    Padding: 25px;
+    Border-radius: 8px;
+}
+
+Label {
+    Font-weight: bold;
+    Color: #123b5d;
+}
+
+Input[type=”text”],
+Input[type=”email”],
+Select,
+Textarea {
+    Width: 100%;
+    Max-width: 600px;
+    Padding: 10px;
+    Margin-top: 5px;
+    Margin-bottom: 15px;
+    Border: 1px solid #b8c2cc;
+    Border-radius: 5px;
+    Font-family: Arial, Helvetica, sans-serif;
+    Font-size: 1rem;
+}
+
+Textarea {
+    Resize: vertical;
+}
+
+Input[type=”submit”] {
+    Background-color: #123b5d;
+    Color: white;
+    Border: none;
+    Padding: 12px 25px;
+    Border-radius: 5px;
+    Font-weight: bold;
+    Cursor: pointer;
+}
+
+Input[type=”submit”]:hover {
+    Background-color: #f4b942;
+    Color: #123b5d;
+}
+
+
+/* ---------- MAP ---------- */
+
+Iframe {
+    Display: block;
+    Width: 100%;
+    Max-width: 600px;
+    Height: 350px;
+    Border: 0;
+    Margin: 20px auto;
+    Border-radius: 8px;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+Footer {
+    Background-color: #123b5d;
+    Color: white;
+    Text-align: center;
+    Padding: 25px 20px;
+    Margin-top: 40px;
+}
+
+Footer p {
+    Margin: 5px;
+}
+
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+@media screen and (max-width: 768px) {
+
+    Header h1 {
+        Font-size: 1.8rem;
+    }
+
+    Nav a {
+        Display: block;
+        Margin: 5px auto;
+        Max-width: 250px;
+    }
+
+    Main {
+        Width: 94%;
+        Margin: 20px auto;
+    }
+
+    Section,
+    Article {
+        Padding: 18px;
+    }
+
+    H2 {
+        Font-size: 1.5rem;
+    }
+
+    H3 {
+        Font-size: 1.2rem;
+    }
+
+    Table {
+        Font-size: 0.9rem;
+    }
+
+    Th,
+    Td {
+        Padding: 8px;
+    }
+
+    Iframe {
+        Height: 280px;
+    }
+}
+
+
+/* ---------- SMALL PHONES ---------- */
+
+@media screen and (max-width: 480px) {
+
+    Header {
+        Padding: 20px 10px;
+    }
+
+    Header h1 {
+        Font-size: 1.5rem;
+    }
+
+    Header p {
+        Font-size: 0.9rem;
+    }
+
+    Main {
+        Width: 96%;
+    }
+
+    Section,
+    Article,
+    Form {
+        Padding: 15px;
+    }
+
+    Input[type=”submit”] {
+        Width: 100%;
+    }
+
+    Iframe {
+        Height: 250px;
+    }
+}
