@@ -1,0 +1,326 @@
+/* Campus Connect main stylesheet */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #263238;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #123b5d;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+header img {
+    width: 180px;
+    max-width: 90%;
+    height: auto;
+}
+
+header h1 {
+    margin: 10px 0 5px;
+    font-size: 2.2rem;
+}
+
+header p {
+    margin: 5px 0 20px;
+    font-size: 1.05rem;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #f4b942;
+    color: #123b5d;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #d5dce2;
+    margin: 30px 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+section,
+article {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #123b5d;
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+h3 {
+    color: #176b87;
+    font-size: 1.3rem;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #176b87;
+}
+
+main a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main a:hover {
+    color: #d18b00;
+    text-decoration: underline;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+main section img {
+    max-width: 500px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+th {
+    background-color: #123b5d;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f1f5f8;
+}
+
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #123b5d;
+    margin: 12px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="search"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #b8c2cc;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button,
+input[type="submit"] {
+    background-color: #123b5d;
+    color: white;
+    border: 0;
+    padding: 11px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 4px 4px 8px 0;
+}
+
+button:hover,
+button:focus,
+input[type="submit"]:hover {
+    background-color: #f4b942;
+    color: #123b5d;
+}
+
+button[aria-pressed="true"] {
+    background-color: #f4b942;
+    color: #123b5d;
+    outline: 2px solid #123b5d;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+a:focus {
+    outline: 2px solid #d18b00;
+    outline-offset: 2px;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    border: 0;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #123b5d;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 2px;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section,
+    article,
+    form {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    iframe {
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    main {
+        width: 96%;
+    }
+
+    section,
+    article,
+    form {
+        padding: 15px;
+    }
+
+    button,
+    input[type="submit"] {
+        max-width: 100%;
+    }
+
+    iframe {
+        height: 250px;
+    }
+}
+
+/* Step 1: additional enquiry form controls */
+input[type="date"] { display: block; width: 100%; max-width: 600px; padding: 10px; margin: 5px 0 15px; border: 1px solid #b8c2cc; border-radius: 5px; font: inherit; }
+button:disabled { opacity: .6; cursor: wait; }
+[role="status"]:not([hidden]) { padding: 12px; border-left: 4px solid #176b87; background: #edf5f8; max-width: 600px; }

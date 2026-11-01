@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect | Announcements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <img src="images/Campus Connect Logo.png" alt="Campus Connect logo">
+    <h1>Campus Connect Announcements</h1>
+    <p>Stay informed about what's happening across student communities.</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="announcements.html" aria-current="page">Announcements</a>
+        <a href="clubs.html">Student Communities</a>
+        <a href="events.html">Events</a>
+        <a href="Transport.html">Transport</a>
+        <a href="enquiry.html">Enquiries</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Latest Updates</h2>
+    <p>Browse announcements by category or select Read more to see the full notice.</p>
+
+    <div class="filter-buttons" id="announcementFilters" aria-label="Filter announcements">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="events" aria-pressed="false">Events</button>
+        <button type="button" data-filter="opportunities" aria-pressed="false">Opportunities</button>
+        <button type="button" data-filter="transport" aria-pressed="false">Transport</button>
+    </div>
+    <p id="announcementNoResults" role="status" hidden>No announcements in this category yet.</p>
+
+    <article class="announcement-card" data-category="events">
+        <h3>Upcoming Student Workshop</h3>
+        <p>Campus Connect will be hosting a student workshop focused on developing practical digital skills.</p>
+        <p><strong>Date:</strong> 20 August 2026</p>
+        <div class="full-text" hidden>
+            <p>The workshop will help students develop practical digital skills and connect with students from different institutions.</p>
+            <p>Contact Campus Connect for further information about registration and venue arrangements.</p>
+        </div>
+        <button type="button" class="read-more" aria-expanded="false">Read more</button>
+    </article>
+
+    <article class="announcement-card" data-category="opportunities">
+        <h3>New Student Community</h3>
+        <p>A new technology-focused student community is available for students interested in technology and innovation.</p>
+        <div class="full-text" hidden>
+            <p>Students can collaborate on projects, share knowledge and take part in activities such as workshops and hackathons. Beginners and experienced students are welcome.</p>
+            <p>Contact Campus Connect for more information about getting involved.</p>
+        </div>
+        <button type="button" class="read-more" aria-expanded="false">Read more</button>
+    </article>
+
+    <article class="announcement-card" data-category="transport">
+        <h3>Transport Information</h3>
+        <p>Students are encouraged to check transport arrangements before travelling to Campus Connect events.</p>
+        <div class="full-text" hidden>
+            <p>Plan your route in advance and check current route information, fares and operating times with the relevant transport provider before travelling.</p>
+            <p><a href="Transport.html">View Transport Information</a></p>
+        </div>
+        <button type="button" class="read-more" aria-expanded="false">Read more</button>
+    </article>
+</main>
+
+<footer>
+    <p>&copy; 2026 Campus Connect</p>
+    <p>Connecting students beyond the classroom.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

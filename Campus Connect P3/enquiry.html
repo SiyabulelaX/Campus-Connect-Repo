@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect | Enquiries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <img src="images/Campus Connect Logo.png" alt="Campus Connect logo">
+    <h1>Service and Partnership Enquiries</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="announcements.html">Announcements</a>
+        <a href="clubs.html">Student Communities</a>
+        <a href="events.html">Events</a>
+        <a href="Transport.html">Transport</a>
+        <a href="enquiry.html" aria-current="page">Enquiries</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<main>
+    <section>
+        <h2>Ask About Our Services</h2>
+        <p>Interested in a student workshop, community activity, volunteering or supporting Campus Connect? Tell us what you need. This form sends an enquiry; it does not confirm a booking or partnership.</p>
+        <p>For general questions, please use the <a href="contact.html">contact form</a>.</p>
+
+
+        <form id="enquiryForm" data-online-form data-endpoint="https://formspree.io/f/xrppynbz" action=""https://formspree.io/f/xrppynbz"" method="POST"> 
+
+            <label for="enquiryName">Full Name *</label>
+            <input id="enquiryName" name="name" type="text" autocomplete="name" minlength="2" maxlength="100" required>
+
+            <label for="enquiryEmail">Email Address *</label>
+            <input id="enquiryEmail" name="email" type="email" autocomplete="email" maxlength="150" required>
+
+            <label for="enquiryOrganisation">Organisation or Campus (optional)</label>
+            <input id="enquiryOrganisation" name="organisation" type="text" maxlength="120">
+            
+
+
+            <label for="enquiryType">Enquiry Type *</label>
+            <select id="enquiryType" name="enquiry_type" required>
+                <option value="">Select an enquiry</option>
+                <option value="Events">Events</option>
+                <option value="Workshops">Workshops</option>
+                <option value="Student Communities">Student Communities</option>
+                <option value="Volunteering">Volunteering</option>
+                <option value="Sponsorship">Sponsorship</option>
+                <option value="Partnership">Partnership</option>
+            </select>
+
+
+
+
+            <label for="enquiryDate">Preferred Event Date (optional)</label>
+            <input id="enquiryDate" name="preferred_date" type="date">
+
+            <label for="enquiryDetails">Tell Us More *</label>
+            <textarea id="enquiryDetails" name="details" rows="7" minlength="15" maxlength="2500" required></textarea>
+
+            <button type="submit">Submit Enquiry</button>
+            <p id="enquiryMessage" role="status" aria-live="polite" hidden></p>
+
+
+        </form>
+    </section>
+</main>
+<footer><p>&copy; 2026 Campus Connect</p><p>Connecting students beyond the classroom.</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
