@@ -71,61 +71,77 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("form[data-online-form]").forEach(function (form) {
         const feedback = form.querySelector('[role="status"]');
         const submitButton = form.querySelector('button[type="submit"]');
-        form.addEventListener("submit", async function (event) {
-            event.preventDefault();
-         
-        const emailinput=form.querySelector('input[type="email"]');
+        const emailInput = form.querySelector('input[type="email"]');
 
-        if(emailField){
-            emailfield.addEventListener("input", function () {
-                emailfield.setCustomValidity("");
+        function showFeedback(message, isError) {
+            if (!feedback) return;
+            feedback.textContent = message;
+            feedback.hidden = false;
+            feedback.style.color = isError ? "#a11919" : "#17653c";
+        }
+
+        // Remove old email errors as soon as the user edits the address.
+        if (emailInput) {
+            emailInput.addEventListener("input", function () {
+                emailInput.setCustomValidity("");
             });
         }
 
+        form.addEventListener("submit", async function (event) {
+            event.preventDefault();
+            if (feedback) feedback.hidden = true;
 
-        if(emailinput){
-            const email=emailinput.value.trim();
-            const emailPattern=/^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/;
-            
-
-         if(!emailPattern.test(email)){ emailinput.setCustomValidity("Please enter a valid email address,e.g student@gamil.com");
-         emailinput.reportValidity();
-         return;
-         } 
-         emailinput.setCustomValidity(""); 
-         }
-
-
-
+            if (emailInput) {
+                emailInput.setCustomValidity("");
+                const email = emailInput.value.trim();
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/;
+                if (email && !emailPattern.test(email)) {
+                    emailInput.setCustomValidity("Enter a valid email address, e.g. student@example.com.");
+                }
+            }
 
             if (!form.checkValidity()) {
                 form.reportValidity();
+                showFeedback("Please correct the highlighted fields before submitting.", true);
                 return;
             }
-            const endpoint = (form.dataset.endpoint || "").trim();
+
+            const endpoint = (form.dataset.endpoint || form.action || "").trim();
             if (!/^https:\/\/formspree\.io\/f\/[a-zA-Z0-9]+$/.test(endpoint)) {
-                feedback.textContent = "Online submissions are not configured yet. Please try again once the form is connected.";
-                feedback.hidden = false;
+                showFeedback("The form is not configured for online submission yet.", true);
                 return;
             }
-            submitButton.disabled = true;
-            feedback.textContent = "Sending your message...";
-            feedback.hidden = false;
+
+            if (submitButton) submitButton.disabled = true;
+            showFeedback("Sending your message...", false);
             try {
                 const response = await fetch(endpoint, {
                     method: "POST",
                     body: new FormData(form),
-                    headers: { "Accept": "application/json" }
+                    headers: { Accept: "application/json" }
                 });
-                if (!response.ok) throw new Error("Submission rejected");
-                feedback.textContent = form.id === "enquiryForm"
-                    ? "Your enquiry was submitted successfully. We will review your request; availability is not yet confirmed."
-                    : "Your message was submitted successfully.";
+                if (!response.ok) {
+                    let details = "";
+                    try {
+                        const data = await response.json();
+                        if (Array.isArray(data.errors)) {
+                            details = data.errors.map(e => e.message).filter(Boolean).join(" ");
+                        }
+                    } catch (_) { /* Response may not contain JSON. */ }
+                    throw new Error(details || "Submission rejected (HTTP " + response.status + ").");
+                }
+                if (form.id === "enquiryForm") {
+                    const type = form.querySelector('[name="enquiry_type"]')?.value || "request";
+                    showFeedback("Your " + type.toLowerCase() + " enquiry was sent successfully. We will review your request and reply by email. Availability and any costs will be confirmed after review.", false);
+                } else {
+                    showFeedback("Your message was sent successfully. Thank you for contacting Campus Connect.", false);
+                }
                 form.reset();
             } catch (error) {
-                feedback.textContent = "Your message could not be sent. Please try again later.";
+                showFeedback("Your message could not be sent. " + (error.message || "Please try again later."), true);
+                console.error("Form submission error:", error);
             } finally {
-                submitButton.disabled = false;
+                if (submitButton) submitButton.disabled = false;
             }
         });
     });
