@@ -32,7 +32,8 @@ The structure of the Campus Connect website is as follows:
 Home Page
 
 Campus Connect is introduced on the Home Page and provides a quick overview for students or other visitors to the organization.
-               Main Features
+
+Main Features
 •	Welcome Message – Introduces Campus Connect and its purpose.
 •	Quick overview – a short summary of services and opportunities offered.
 •	Get In Touch With – connects students, student groups and potential partners with resources to become involved or join with Campus Connect. 
@@ -241,3 +242,329 @@ Browser Testing
 •	Google Chrome 
 •	Microsoft Edge 
 
+
+
+# Part 2 – Website Development and Progression
+
+## 1. Introduction
+
+Part 2 of the Campus Connect project focused on developing and improving the initial website structure created during Part 1.
+
+The main objective was to transform the basic HTML pages into a more organised, visually appealing and user-friendly website using HTML5 and CSS3.
+
+During this stage, attention was given to page layouts, navigation, styling, content organisation and the overall consistency of the website.
+
+## 2. Progression from Part 1
+
+Part 1 focused on planning the website, identifying its target audience and creating the initial HTML structure.
+
+Campus Connect was developed as a Johannesburg-based student platform intended to connect students from different universities and colleges.
+
+In Part 2, the project progressed from basic HTML pages to a more complete multi-page website with a consistent visual identity.
+
+The main improvements included:
+
+- Introducing CSS styling across the website.
+- Improving the navigation menu.
+- Organising content into clearly defined sections.
+- Adding relevant images and visual elements.
+- Developing a consistent header and footer.
+- Improving the layout and readability of information.
+- Introducing basic responsive design principles.
+
+## 3. Website Structure and Pages
+
+The website was developed using several interconnected HTML pages.
+
+### Home Page
+
+The Home page introduces Campus Connect and explains its purpose. It provides an overview of the platform, highlights its services and directs visitors to important sections.
+
+### About Us Page
+
+The About Us page provides information about Campus Connect, including its mission, vision and intended audience.
+
+### Services Page
+
+The Services page introduces the resources and opportunities offered through Campus Connect, including student communities, events, workshops and transport information.
+
+### Student Communities Page
+
+The Student Communities page introduces clubs and societies that students can explore according to their interests.
+
+### Announcements Page
+
+The Announcements page provides space for student updates, activities and opportunities.
+
+### Events Page
+
+The Events page presents student-focused events, workshops and activities.
+
+### Transport Page
+
+The Transport page provides information about travelling around Johannesburg and accessing transport options relevant to students.
+
+### Contact and Enquiry Pages
+
+These pages provide ways for students, organisations and potential partners to communicate with Campus Connect.
+
+## 4. CSS Styling and Visual Design
+
+An external CSS stylesheet was introduced to maintain consistent styling across the website.
+
+The main design improvements included:
+
+- A dark blue header and footer.
+- A light background for improved readability.
+- White content sections with rounded corners.
+- Consistent typography and spacing.
+- Styled navigation links and buttons.
+- Hover and focus effects.
+- Improved image presentation.
+
+The selected colours were intended to create a professional, welcoming and recognisable identity for Campus Connect.
+
+## 5. Navigation Improvements
+
+A consistent navigation menu was included across the website's pages.
+
+This allows visitors to move between the Home, About Us, Services, Announcements, Student Communities, Events, Transport, Enquiries and Contact pages.
+
+Internal links were also added within page content to guide visitors towards related information.
+
+These improvements make the website easier to explore.
+
+## 6. Content Organisation
+
+The content was organised using semantic HTML elements such as:
+
+- `<header>` for branding and navigation.
+- `<nav>` for page links.
+- `<main>` for primary page content.
+- `<section>` for grouping related information.
+- `<article>` for independent content.
+- `<footer>` for concluding website information.
+
+Headings, paragraphs, lists and images were used to improve the presentation and readability of information.
+
+## 7. Images and Visual Elements
+
+Images were introduced to make the website more engaging and relevant to student life.
+
+These include the Campus Connect logo, Johannesburg-related images, student activities and visual content representing communities and workshops.
+
+Images help communicate the purpose of different sections and reduce the amount of text-only content.
+
+## 8. Responsive Design
+
+Initial responsive styling was introduced to improve the website's appearance across different devices.
+
+CSS media queries were used to adjust headings, content spacing, navigation and images for smaller screens.
+
+Further mobile responsiveness improvements and testing were planned for Part 3.
+
+## 9. Challenges Experienced
+
+Several challenges were encountered during the development process.
+
+These included:
+
+- Maintaining consistent styling across multiple HTML pages.
+- Managing image sizes and file paths.
+- Organising navigation links correctly.
+- Adjusting page layouts for different screen sizes.
+- Ensuring that new CSS rules did not negatively affect existing sections.
+
+These challenges provided opportunities to improve understanding of HTML structure, CSS selectors and website layout techniques.
+
+## 10. Skills and Knowledge Gained
+
+Part 2 helped develop practical knowledge of:
+
+- Building and organising multi-page websites.
+- Linking external CSS files to HTML documents.
+- Using CSS selectors and properties.
+- Working with images and file paths.
+- Applying consistent design principles.
+- Using semantic HTML.
+- Introducing responsive website layouts.
+- Testing and refining website presentation.
+
+## 11. Preparation for Part 3
+
+The work completed during Part 2 provided the foundation for further website improvements.
+
+Part 3 would focus on adding JavaScript functionality, improving forms, introducing interactive transport features, strengthening SEO and preparing the website for deployment.
+
+This progression demonstrates how a basic website can be developed into a more interactive and accessible platform.
+
+## 12. Conclusion
+
+Part 2 represented an important stage in the development of Campus Connect.
+
+The project progressed from an initial HTML structure to a styled, organised and interconnected website.
+
+The improvements to navigation, content presentation, visual design and responsiveness established a foundation for the advanced functionality and optimisation introduced in Part 3.
+
+
+
+
+
+
+# Part 3 – Website Improvements and Enhancements
+
+## 1. Introduction
+
+Part 3 of the Campus Connect project focuses on improving the website's functionality, user experience, accessibility and search engine optimisation (SEO).
+
+Campus Connect is a Johannesburg-based student platform designed to connect students from different universities and colleges. The website provides information about student communities, events, workshops, opportunities, resources and transport.
+
+The purpose of this development stage is to make the website more interactive, responsive and suitable for deployment.
+
+## 2. Technologies Used
+
+The following technologies were used during the development and improvement of Campus Connect:
+
+- **HTML5:** Structures the website's pages, navigation, content and forms.
+- **CSS3:** Controls the website's appearance, layout and responsiveness.
+- **JavaScript:** Provides interactive features and handles user interactions.
+- **Leaflet.js:** Provides an interactive map on the Transport page.
+- **OpenStreetMap:** Supplies map tiles for the interactive transport map.
+- **Formspree:** Provides an external service for processing contact and enquiry form submissions.
+- **GitHub:** Supports version control and project management.
+- **GitHub Pages:** Selected as a possible deployment platform for the static website.
+
+## 3. JavaScript Functionality
+
+JavaScript was introduced to improve interaction and make information easier for visitors to access.
+
+### 3.1 Student Communities
+
+The Student Communities page includes search and filtering functionality to help students find clubs and societies that match their interests.
+
+### 3.2 Announcements
+
+The Announcements page uses JavaScript filtering to help users find relevant student updates and opportunities.
+
+### 3.3 Transport and Mobility
+
+The Transport page includes several interactive features:
+
+- A region selector that displays relevant transport information.
+- An expandable Student Travel Guide.
+- A collapsible transport directory.
+- An interactive map showing selected Johannesburg transport locations.
+- Clickable map markers that display location information.
+
+A transport hub dropdown was also introduced to allow users to select a location and navigate to its map marker. This feature requires further debugging before it can be considered complete.
+
+## 4. Forms and User Interaction
+
+The Contact and Enquiry pages were enhanced using JavaScript and Formspree.
+
+These improvements aim to provide:
+
+- Validation of required form fields.
+- Submission of information without unnecessary page navigation.
+- Feedback messages indicating submission results.
+- Improved handling of user enquiries.
+
+The forms require final testing in the deployed environment to confirm that submissions and feedback work correctly.
+
+## 5. Search Engine Optimisation (SEO)
+
+SEO improvements were introduced to help search engines understand the website's content and make it easier for students to discover Campus Connect.
+
+The improvements include:
+
+- Descriptive and relevant page titles.
+- Unique meta descriptions for individual pages.
+- Appropriate heading structures using H1, H2 and H3 elements.
+- Alternative text for meaningful images.
+- Internal links connecting related pages.
+- Mobile-friendly viewport settings.
+
+These changes support the website's visibility and accessibility, although search engine rankings are not guaranteed.
+
+## 6. Responsive Web Design
+
+CSS media queries were used to improve how Campus Connect displays on different screen sizes.
+
+The website includes responsive styling for:
+
+- Navigation links and page headings.
+- Images and content sections.
+- Forms and input controls.
+- Tables and embedded content.
+- Interactive transport map.
+
+The main responsive breakpoints include 768px and 480px, with additional styling for selected transport features at 600px.
+
+Final testing will confirm that the website displays correctly on desktop computers, tablets and smartphones.
+
+## 7. Accessibility and User Experience
+
+Accessibility improvements were included to make the website easier to navigate and use.
+
+These include descriptive image alternative text, visible keyboard focus indicators, clearly labelled form fields and expandable content sections.
+
+The website also maintains consistent colours, typography and navigation across its pages.
+
+## 8. Testing and Debugging
+
+The website is being tested to identify and correct problems before deployment.
+
+Testing focuses on:
+
+- Navigation between pages.
+- JavaScript search and filtering.
+- Transport map markers and popups.
+- Contact and enquiry form validation.
+- Mobile responsiveness.
+- Image loading and file paths.
+- HTML structure and SEO metadata.
+- Browser console errors.
+
+One outstanding issue is the transport hub dropdown, which will be revisited during the final debugging process.
+
+## 9. Deployment
+
+Campus Connect is designed as a static website using HTML, CSS and JavaScript.
+
+GitHub Pages has been identified as a suitable hosting platform. The deployment process involves uploading the website files to a GitHub repository, enabling GitHub Pages and testing the published website.
+
+**Deployment status:** Pending final verification.
+
+Once deployed, the website will be checked for broken links, missing images, JavaScript errors, form functionality and mobile compatibility.
+
+## 10. Challenges and Lessons Learned
+
+The development process highlighted several important lessons:
+
+- JavaScript functionality depends on correct HTML element IDs and event listeners.
+- Browser caching and different file versions can complicate debugging.
+- Responsive design requires testing across different screen sizes.
+- Image paths and filename consistency are important for successful deployment.
+- SEO involves both technical HTML improvements and meaningful page content.
+- Testing individual features helps identify problems before they affect the entire website.
+
+## 11. Future Improvements
+
+Possible future improvements include:
+
+- Completing the transport hub dropdown functionality.
+- Expanding transport locations on the interactive map.
+- Developing a student registration and login system.
+- Allowing students to create and manage communities.
+- Introducing event registration and RSVP functionality.
+- Connecting the website to a database for dynamic content.
+
+These features are future development ideas and are not part of the current static implementation.
+
+## 12. Conclusion
+
+Part 3 builds on the original Campus Connect website by introducing interactive functionality, improving its visual responsiveness and strengthening its SEO and accessibility foundations.
+
+The project demonstrates the use of HTML, CSS, JavaScript and external services to develop a practical student-focused website.
+
+Final testing, debugging and deployment remain the concluding steps before the website is ready for public use.
