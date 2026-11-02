@@ -568,3 +568,16 @@ Part 3 builds on the original Campus Connect website by introducing interactive 
 The project demonstrates the use of HTML, CSS, JavaScript and external services to develop a practical student-focused website.
 
 Final testing, debugging and deployment remain the concluding steps before the website is ready for public use.
+
+
+### References
+
+GitHub (n.d.) *Quickstart for GitHub Pages*. Available at: https://docs.github.com/en/pages/quickstart (Accessed: 20 October 2026).
+
+Leaflet (n.d.) *Leaflet API reference*. Available at: https://leafletjs.com/reference.html (Accessed: 29 October 2026).
+
+MDN Web Docs (n.d.) *Introduction – JavaScript*. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction (Accessed: 15 October 2026).
+
+MDN Web Docs (n.d.) *JavaScript Guide*. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide (Accessed: 20 October 2026).
+
+MDN Web Docs (n.d.) *Web forms*. Available at: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms (Accessed: 28 October 2026).
