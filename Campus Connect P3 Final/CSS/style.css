@@ -1,0 +1,616 @@
+/* Campus Connect main stylesheet */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #263238;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #123b5d;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+header img {
+    width: 180px;
+    max-width: 90%;
+    height: auto;
+}
+
+header h1 {
+    margin: 10px 0 5px;
+    font-size: 2.2rem;
+}
+
+header p {
+    margin: 5px 0 20px;
+    font-size: 1.05rem;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #f4b942;
+    color: #123b5d;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #d5dce2;
+    margin: 30px 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+section,
+article {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #123b5d;
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+h3 {
+    color: #176b87;
+    font-size: 1.3rem;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #176b87;
+}
+
+main a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main a:hover {
+    color: #d18b00;
+    text-decoration: underline;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+main section img {
+    max-width: 500px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+th {
+    background-color: #123b5d;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f1f5f8;
+}
+
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #123b5d;
+    margin: 12px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="search"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #b8c2cc;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button,
+input[type="submit"] {
+    background-color: #123b5d;
+    color: white;
+    border: 0;
+    padding: 11px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 4px 4px 8px 0;
+}
+
+button:hover,
+button:focus,
+input[type="submit"]:hover {
+    background-color: #f4b942;
+    color: #123b5d;
+}
+
+button[aria-pressed="true"] {
+    background-color: #f4b942;
+    color: #123b5d;
+    outline: 2px solid #123b5d;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+a:focus {
+    outline: 2px solid #d18b00;
+    outline-offset: 2px;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    border: 0;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #123b5d;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 2px;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section,
+    article,
+    form {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    iframe {
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    main {
+        width: 96%;
+    }
+
+    section,
+    article,
+    form {
+        padding: 15px;
+    }
+
+    button,
+    input[type="submit"] {
+        max-width: 100%;
+    }
+
+    iframe {
+        height: 250px;
+    }
+}
+
+/* Step 1: additional enquiry form controls */
+input[type="date"] { display: block; width: 100%; max-width: 600px; padding: 10px; margin: 5px 0 15px; border: 1px solid #b8c2cc; border-radius: 5px; font: inherit; }
+button:disabled { opacity: .6; cursor: wait; }
+[role="status"]:not([hidden]) { padding: 12px; border-left: 4px solid #176b87; background: #edf5f8; max-width: 600px; }
+
+
+
+/* STUDENT TRAVEL GUIDE */
+
+#travel-guide {
+  max-width: 900px;
+  margin: 35px auto;
+  padding: 20px;
+}
+
+.travel-accordion {
+  margin-top: 20px;
+}
+
+.accordion-item {
+  margin-bottom: 12px;
+  border: 1px solid #d5dce5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-btn {
+  width: 100%;
+  padding: 16px 20px;
+  background-color: #102a43;
+  color: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-btn:hover,
+.accordion-btn[aria-expanded="true"] {
+  background-color: #234b70;
+}
+
+.accordion-btn:focus-visible {
+  outline: 3px solid #d4a017;
+  outline-offset: -3px;
+}
+
+.accordion-content {
+  padding: 18px 20px;
+  background-color: #f7f9fc;
+  color: #102a43;
+  line-height: 1.7;
+}
+
+.accordion-content[hidden] {
+  display: none;
+}
+
+
+
+/* TRANSPORT PAGE CLEANUP */
+
+#transport-finder,
+#travel-guide,
+#transport-directory {
+  max-width: 950px;
+  margin: 30px auto;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+#transport-finder,
+#transport-directory {
+  background-color: #f7f9fc;
+  border: 1px solid #d5dce5;
+  border-radius: 12px;
+}
+
+#transport-finder select {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  padding: 12px;
+  margin: 8px 0 18px;
+  border: 1px solid #b8c4d0;
+  border-radius: 6px;
+  font: inherit;
+}
+
+#transportResults {
+  margin-top: 20px;
+  padding: 18px;
+  background-color: white;
+  border-left: 4px solid #d4a017;
+  border-radius: 6px;
+}
+
+.directory-details {
+  margin-top: 18px;
+  border: 1px solid #d5dce5;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.directory-details summary {
+  padding: 16px 20px;
+  background-color: #102a43;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.directory-details[open] summary {
+  border-radius: 7px 7px 0 0;
+}
+
+.directory-details summary:focus-visible {
+  outline: 3px solid #d4a017;
+  outline-offset: 3px;
+}
+
+.table-scroll {
+  padding: 15px;
+  overflow-x: auto;
+}
+
+.table-scroll table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+@media (max-width: 600px) {
+  #transport-finder,
+  #travel-guide,
+  #transport-directory {
+    padding: 15px;
+    margin: 20px auto;
+  }
+}
+
+
+
+/* INTERACTIVE TRANSPORT MAP */
+
+#transport-map-section {
+  max-width: 950px;
+  margin: 30px auto;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: #f7f9fc;
+  border: 1px solid #d5dce5;
+  border-radius: 12px;
+}
+
+#transportMap {
+  width: 100%;
+  height: 420px;
+  border-radius: 10px;
+  border: 2px solid #d5dce5;
+  z-index: 0;
+}
+
+.map-note {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #475569;
+}
+
+@media (max-width: 600px) {
+  #transport-map-section {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  #transportMap {
+    display: block;
+    width: 100%;
+    height: 420px;
+    min-height: 420px;
+    background-color: #e5e7eb;
+  }
+}
+
+
+/* TRANSPORT HUB DROPDOWN */
+
+.map-search {
+  margin: 20px 0;
+}
+
+.map-search label {
+  display: block;
+  margin-bottom: 8px;
+  color: #102a43;
+}
+
+#transportHub {
+  width: 100%;
+  max-width: 450px;
+  padding: 12px;
+  border: 1px solid #b8c4d0;
+  border-radius: 6px;
+  background-color: white;
+  color: #102a43;
+  font: inherit;
+}
+
+#transportHub:focus-visible {
+  outline: 3px solid #d4a017;
+  outline-offset: 2px;
+}
+
+
+
+
+.club-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+
+
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive navigation */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* Responsive forms */
+input,
+select,
+textarea {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Tablet and mobile */
+@media (max-width: 768px) {
+  main {
+    padding: 15px;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  #transportMap {
+    height: 300px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
